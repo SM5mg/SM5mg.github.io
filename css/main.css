@@ -2978,7 +2978,7 @@ details.folding[child=iframe] >div.body {
   width: 48px;
   height: 48px;
   background: var(--card);
-  border-radius: 64px;
+  border-radius: 8px /* 图片的圆角设置，与卡片保持协调 */;
   margin: 0 0 0.5rem;
 }
 .users-wrap .user-card .card-link >img {
@@ -2991,7 +2991,7 @@ details.folding[child=iframe] >div.body {
   background: var(--block-hover);
 }
 .users-wrap .user-card .card-link:hover img {
-  transform: scale(1.2) rotate(8deg);
+  transform: scale(1.5) rotate(360deg);
   box-shadow: 0 12px 16px -4px rgba(0,0,0,0.2);
 }
 .tag-plugin.gallery .grid-cell,
