@@ -88,11 +88,11 @@ function toggleSnow() {
         clearInterval(snowInterval);
         $canvas.innerHTML = '';
         Config.active = false;
-        message.toast("切换到晴天模式");
+        message.toast("晴天");
     } else {
         snowInterval = startSnowInterval()
         Config.active = true;
-        message.toast("切换到下雪模式");
+        message.toast("下雪");
     }
     localStorage.setItem('snowActive', Config.active);
 }

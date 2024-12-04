@@ -251,3 +251,32 @@ a, [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(
   scrollbar-width: none;
   /* 隐藏滚动条 */
 }
+
+/* 样式：侧边栏 */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* 下拉框样式 */
+.dropdown {
+  position: relative;
+}
+
+

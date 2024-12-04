@@ -282,6 +282,7 @@ td.hljs-ln-line.hljs-ln-numbers {
 /* 描述 */
 .md-text .highlight figcaption span {
   font-size: small;
+  text-indent: 2px; /* 确保文字不会与圆点重叠 */
 }
 
 /* 折叠 */
@@ -342,14 +343,14 @@ td.code:before {
 }
 
 #start>div>article>figure.highlight:hover>figcaption>span {
-  background: #020202e3;
-  color: #EDB65B;
+  background: #a2a2dde3;
+  color: #3e3f3c;
   font-weight: bolder;
   transition: 0.6s;
 }
 
 #start>div>article>figure.highlight>figcaption>span {
-  margin-left: 3em;
+  margin-left: 5em;
 }
 
 /* 防止有些浏览器代码块不兼容 */
@@ -372,3 +373,20 @@ td.code:before {
   height: auto;
   overflow: visible;
 }
+
+.highlight {
+  position: relative; /* 确保伪元素相对于代码块定位 */
+}
+
+.highlight::after {
+  content: "✨Sumor"; /* 固定脚注内容 */
+  position: absolute;
+  bottom: 5px; /* 距离代码块底部 */
+  right: 10px; /* 距离代码块右侧 */
+  font-size: 12px; /* 字体大小 */
+  color: #aaa; /* 灰色字体 */
+  font-style: italic; /* 斜体样式 */
+  pointer-events: none; /* 确保脚注不影响鼠标交互 */
+  opacity: 0.75; /* 半透明效果 */
+}
+

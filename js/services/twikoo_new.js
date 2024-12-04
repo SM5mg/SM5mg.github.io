@@ -3,6 +3,7 @@ utils.jq(() => {
   utils.onLoading(el); // 加载动画
 
   const api = el.getAttribute('api');
+  
   const limit = parseInt(el.getAttribute('limit')) || 10;
   const reply = el.getAttribute('hide') !== 'reply';
   if (!api) return;
