@@ -108,7 +108,7 @@
 
 <widget class="widget-wrapper timeline"><div class="widget-header dis-select"><span class="name"><i class="fa-solid fa-snowflake fa-spin" style="color: #08D9D6;"></i> 主题更新</span></div><div class="widget-body fs14"><div class="tag-plugin timeline ds-timeline" api="https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/releases?per_page=1" user="xaoxuu"></div></div></widget>
 </div>
-<footer class="footer dis-select"><div class="social-wrap"><a class="social" title="Github" href="https://github.com/SM5mg" target="_blank" rel="external nofollow noopener noreferrer"><i class="fa fa-github fa-brands fa-bounce"></i></a><a class="social" title="网易云" href="https://music.163.com/#/user/home?id=74806809" target="_blank" rel="external nofollow noopener noreferrer"><i class="fa-solid fa-music fa-flip"></i></a><a class="social" title="B站" href="https://space.bilibili.com/72972753/" target="_blank" rel="external nofollow noopener noreferrer"><i class="fas fa-play  fa-brands fa-bounce"></i></a><a class="social" title="留言板" href="/about/#comments" rel="noopener noreferrer"><i class="fa-solid fa-commenting fa-shake"></i></a><a class="social" title="Rss订阅" href="/atom.xml" rel="noopener noreferrer"><i class="fa-solid fa-rss fa-shake"></i></a><a class="social" title="日/夜" onclick="switchTheme()"><i class="fa-solid fa-moon fa-flip"></i></a></div></footer>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" title="Github" href="https://github.com/SM5mg" target="_blank" rel="external nofollow noopener noreferrer"><i class="fa fa-github fa-brands fa-bounce"></i></a><a class="social" title="网易云" href="https://music.163.com/#/user/home?id=74806809" target="_blank" rel="external nofollow noopener noreferrer"><i class="fa-solid fa-music fa-flip"></i></a><a class="social" title="B站" href="https://space.bilibili.com/72972753/" target="_blank" rel="external nofollow noopener noreferrer"><i class="fas fa-play  fa-brands fa-bounce"></i></a><a class="social" title="留言板" href="/about/#comments" rel="noopener noreferrer"><i class="fa-solid fa-commenting fa-shake"></i></a><a class="social" title="下雪/晴天" href="javaScript:toggleSnow();" rel="noopener noreferrer"><i class="fa-solid fa-snowflake fa-spin" style="--fa-animation-duration: 8s;"></i></a><a class="social" title="日/夜" onclick="switchTheme()"><i class="fa-solid fa-moon fa-flip"></i></a></div></footer>
 </div></aside><div class="l_main" id="main">
 
 
@@ -175,13 +175,13 @@
 
 <div class="article-footer fs14">
     <section id="license">
-      <div class="header"><span>许可协议</span></div>
+      <div class="header"><span>License</span></div>
       <div class="body"><p>本文遵循<a target="_blank" rel="noopener external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">非商业性使用-国际署名</a> 许可协议，转载请说明。</p>
 </div>
     </section>
     
     <section id="share">
-      <div class="header"><span>分享文章</span></div>
+      <div class="header"><span>Share</span></div>
       <div class="body">
         <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://5mg.fun/wiki/Hexo/101Github-hosting-webpage.html" /></div>
         <div class="social-wrap dis-select"><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://5mg.fun/wiki/Hexo/101Github-hosting-webpage.html&title=Github Pages托管静态页面 - 薩魔5mg&summary=
@@ -199,6 +199,42 @@ GiHub Pages 入门——官方文档
         
       </div>
     </section>
+   
+    <section id="donate">
+      <div class="header"><span>Buy Me A Coffee</span></div>
+      <div class="body">
+        <p>点击投喂站长 . 
+          <span class="donate-icon" onclick="showQRCode()" style="display: inline-block;">
+            <i class="fas fa-coffee fa-fade" style="color:#fe7904dc;"></i>
+          </span>
+        </p>
+        
+        <div class="donate-image" id="donate-wechat" style="display:none; position:absolute; z-index:1000; transform: translateY(-100%); left: 50%; transform: translateX(-50%) translateY(-100%);">
+          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/assets/images/we-do.png" alt="Donate with WeChat" style="width: 150px; height: auto;" />
+        </div>
+        
+      </div>
+    </section>
+    
+    <script>
+      const showQRCode = () => {
+        const qrCode = document.getElementById('donate-wechat');
+        qrCode.style.display = 'block';
+
+        document.addEventListener('click', hideQRCode);
+      };
+
+      const hideQRCode = (event) => {
+        const qrCode = document.getElementById('donate-wechat');
+        const donateIcon = document.querySelector('.donate-icon');
+
+        if (!qrCode.contains(event.target) && !donateIcon.contains(event.target)) {
+          qrCode.style.display = 'none';
+
+          document.removeEventListener('click', hideQRCode);
+        }
+      };
+    </script>
     </div></article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/wiki/Hexo/1.Hexo%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2.html">Hexo-stellar环境搭建</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/wiki/Hexo/102Domain-Name.html">Github Pages绑定域名</a></div></section></div>
 
@@ -722,9 +758,10 @@ GiHub Pages 入门——官方文档
 
 
 <!-- inject -->
-<script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script src="/static/js/snow.js"></script><script src="/js/random.js"> </script><script src="/js/custom.js"></script><script src="/js/code-block.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script src="/static/js/snow.js"></script><script src="/js/random.js"></script><script src="/js/custom.js"></script><script src="/js/code-block.js"></script>
 </div><!-- hexo injector body_end start -->
   <script>
     mediumZoom(".l_body .content p img", { background: "var(--site-bg)" })
   </script>
   <!-- hexo injector body_end end --></body></html>
+<script>var posts=["posts/5e927dfc.html","posts/4812c2a7.html","posts/d4aaf8b4.html","posts/d127d11.html","posts/7375d15a.html","posts/e48f9054.html","posts/edeb1358.html","posts/2e016ed9.html","posts/ed4d040e.html","posts/39ab41cf.html","posts/404029d6.html","posts/25037f5b.html","posts/58b305af.html","posts/e39f3cee.html","posts/e995d344.html","posts/1094ebf6.html","posts/bfc388e3.html","posts/2e070ebb.html","posts/fd968aff.html"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>

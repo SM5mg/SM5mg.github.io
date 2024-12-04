@@ -2,7 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://5mg.fun/wiki/LogC/1-2.html</loc>
+    
+    <lastmod>2024-12-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://5mg.fun/wiki/LogC/1-1.html</loc>
+    
+    <lastmod>2024-12-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://5mg.fun/about/index.html</loc>
+    
+    <lastmod>2024-12-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://5mg.fun/wiki/Hexo/201Webpage-beautification.html</loc>
+    
+    <lastmod>2024-12-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://5mg.fun/posts/e995d344.html</loc>
     
     <lastmod>2024-12-04</lastmod>
     
@@ -92,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/wiki/Hexo/201Webpage-beautification.html</loc>
-    
-    <lastmod>2024-12-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://5mg.fun/wiki/Hexo/102Domain-Name.html</loc>
     
     <lastmod>2024-12-03</lastmod>
@@ -138,15 +165,6 @@
   
   <url>
     <loc>https://5mg.fun/wiki/Hexo/202Theme-black-white-switch.html</loc>
-    
-    <lastmod>2024-12-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://5mg.fun/posts/e995d344.html</loc>
     
     <lastmod>2024-12-03</lastmod>
     
@@ -254,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/posts/bfc388e3.html</loc>
+    <loc>https://5mg.fun/posts/1094ebf6.html</loc>
     
     <lastmod>2024-12-03</lastmod>
     
@@ -263,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/posts/1094ebf6.html</loc>
+    <loc>https://5mg.fun/posts/bfc388e3.html</loc>
     
     <lastmod>2024-12-03</lastmod>
     
@@ -281,15 +299,6 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/posts/39ab41cf.html</loc>
-    
-    <lastmod>2024-12-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://5mg.fun/posts/ed4d040e.html</loc>
     
     <lastmod>2024-12-03</lastmod>
@@ -299,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/posts/58b305af.html</loc>
+    <loc>https://5mg.fun/posts/39ab41cf.html</loc>
     
     <lastmod>2024-12-03</lastmod>
     
@@ -309,6 +318,15 @@
   
   <url>
     <loc>https://5mg.fun/posts/25037f5b.html</loc>
+    
+    <lastmod>2024-12-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://5mg.fun/posts/58b305af.html</loc>
     
     <lastmod>2024-12-03</lastmod>
     
@@ -326,20 +344,6 @@
 
   
   <url>
-    <loc>https://5mg.fun/tags/NameSilo/</loc>
-    <lastmod>2024-12-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://5mg.fun/tags/CloudFlare/</loc>
-    <lastmod>2024-12-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://5mg.fun/tags/Bug/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -354,6 +358,20 @@
   </url>
   
   <url>
+    <loc>https://5mg.fun/tags/NameSilo/</loc>
+    <lastmod>2024-12-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://5mg.fun/tags/CloudFlare/</loc>
+    <lastmod>2024-12-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://5mg.fun/tags/Github/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -361,14 +379,14 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/tags/VSCode/</loc>
+    <loc>https://5mg.fun/tags/SSL/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://5mg.fun/tags/SSL/</loc>
+    <loc>https://5mg.fun/tags/VSCode/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -403,14 +421,14 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/tags/%E5%86%99%E4%BD%9C%E6%A1%86%E6%9E%B6/</loc>
+    <loc>https://5mg.fun/tags/%E5%8F%94%E6%9C%AC%E5%8D%8E/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://5mg.fun/tags/%E5%8F%94%E6%9C%AC%E5%8D%8E/</loc>
+    <loc>https://5mg.fun/tags/%E5%86%99%E4%BD%9C%E6%A1%86%E6%9E%B6/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -431,13 +449,6 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/tags/%E5%B0%8F%E8%AF%B4%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2024-12-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://5mg.fun/tags/%E5%B0%8F%E8%AF%B4%E6%8F%90%E7%BA%B2/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -445,7 +456,7 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/tags/%E6%A2%A6/</loc>
+    <loc>https://5mg.fun/tags/%E5%B0%8F%E8%AF%B4%E6%A1%86%E6%9E%B6/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -459,7 +470,7 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/tags/ChatGPT/</loc>
+    <loc>https://5mg.fun/tags/%E6%A2%A6/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -467,6 +478,13 @@
   
   <url>
     <loc>https://5mg.fun/tags/IOS/</loc>
+    <lastmod>2024-12-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://5mg.fun/tags/ChatGPT/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -503,14 +521,14 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/categories/%E6%8A%80%E6%9C%AF%E4%B9%B1%E7%82%96/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://5mg.fun/categories/%E6%8A%80%E6%9C%AF%E4%B9%B1%E7%82%96/Bug%E4%BF%AE%E5%A4%8D/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://5mg.fun/categories/%E6%8A%80%E6%9C%AF%E4%B9%B1%E7%82%96/Bug%E4%BF%AE%E5%A4%8D/</loc>
+    <loc>https://5mg.fun/categories/%E6%8A%80%E6%9C%AF%E4%B9%B1%E7%82%96/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -538,14 +556,14 @@
   </url>
   
   <url>
-    <loc>https://5mg.fun/categories/%E5%86%99%E4%BD%9C%E9%98%85%E8%AF%BB/%E6%97%A5%E5%B8%B8%E5%86%99%E4%BD%9C/</loc>
+    <loc>https://5mg.fun/categories/%E5%86%99%E4%BD%9C%E9%98%85%E8%AF%BB/%E8%AF%97%E6%AD%8C%E5%AE%8B%E8%BE%9E/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://5mg.fun/categories/%E5%86%99%E4%BD%9C%E9%98%85%E8%AF%BB/%E8%AF%97%E6%AD%8C%E5%AE%8B%E8%BE%9E/</loc>
+    <loc>https://5mg.fun/categories/%E5%86%99%E4%BD%9C%E9%98%85%E8%AF%BB/%E6%97%A5%E5%B8%B8%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

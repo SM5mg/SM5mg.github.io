@@ -12,12 +12,12 @@ const message = {
 }
 
 const Config = {
-    snow: ['❄️', '☃️', '❄', '※', '❅', '❆', '❈', '❉', '❊', '❋'],
-    color: '#d9e2e7',
-    speed: 10,
-    dom: document.getElementsByTagName('body')[0],
-    interval: 800,
-    active: false
+  snow: ["⭐","🫧", "✨", "⛄", "❄️", "☃️", "❄", "※", "❅", "❆", "❈", "❉", "❊", "❋"],
+  color: "#d9e2e7",
+  speed: 10,
+  dom: document.getElementsByTagName("body")[0],
+  interval: 800,
+  active: false,
 };
 
 // 从 localStorage 获取雪花模式状态
@@ -88,11 +88,11 @@ function toggleSnow() {
         clearInterval(snowInterval);
         $canvas.innerHTML = '';
         Config.active = false;
-        message.toast("晴天");
+        message.toast("🔆Sun");
     } else {
         snowInterval = startSnowInterval()
         Config.active = true;
-        message.toast("下雪");
+        message.toast("☃️Snow");
     }
     localStorage.setItem('snowActive', Config.active);
 }
