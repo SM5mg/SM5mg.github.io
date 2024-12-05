@@ -6,7 +6,7 @@
   <link href="https://5mg.fun/atom.xml" rel="self"/>
   
   <link href="https://5mg.fun/"/>
-  <updated>2024-12-05T08:04:33.895Z</updated>
+  <updated>2024-12-05T11:24:42.869Z</updated>
   <id>https://5mg.fun/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://5mg.fun/posts/e6c9a182.html"/>
     <id>https://5mg.fun/posts/e6c9a182.html</id>
     <published>2024-12-05T03:33:45.200Z</published>
-    <updated>2024-12-05T08:04:33.895Z</updated>
+    <updated>2024-12-05T11:24:42.869Z</updated>
     
     <content type="html"><![CDATA[<p>免费申请3个us.kg域名，可以cloudfare托管。</p><span id="more"></span><h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><blockquote><p>Github账号<br>Google邮箱（最好开启两步验证，提升成功率）<br><a href="https://www.dizhishengcheng.com/">外国人地址生成器</a>：<a href="https://www.dizhishengcheng.com/">https://www.dizhishengcheng.com/</a></p></blockquote><h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><ol><li>进入<a href="https://nic.us.kg/">US.KG</a>官网。</li></ol><ul><li>点击黄色按钮<code>check</code>想要的域名是否已被注册 ; </li><li>点击蓝色按钮<code>register a new domain</code>去注册网站账号。<div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/C3qPWTjEzUFDSJK.jpg" data-fancybox="true"/></div></div></li></ul><ol start="2"><li><p>点击 <code>sign up</code> 注册成为该网站的用户。（邮箱建议用gmail)</p><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/sNCApofbjtX6cY9.jpg" data-fancybox="true"/></div></div></li><li><p>进入<a href="https://www.dizhishengcheng.com/">外国人地址生成网址</a>,刷新网页，随意生成一个人的信息，粘贴。</p></li></ol><ul><li>邮箱：写自己的gmail邮箱，用于激活账户。</li><li>电话： <code>+1-3XXXXX..</code> （注意格式，前面加 <code>+1-</code> ，后面的数字不加杠）</li><li>地址：从小到大分别填写、街道，城市，州，邮编，国家（使用英文字符）</li></ul><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/ogin6531xEZkBQW.jpg" data-fancybox="true"/></div></div><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/hdpukXSUxo6LiRK.jpg" data-fancybox="true"/></div></div><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/Jrhui541tzg2oPH.jpg" data-fancybox="true"/></div></div><ol start="4"><li>注册成功后，进入刚才填写的邮箱，查看us.kg官方邮件，点击链接激活注册用户。<div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/1HOZtcBrx4b3eIC.jpg" data-fancybox="true"/></div></div></li></ol><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/rcqgfhoyuWHvOnM.jpg" data-fancybox="true"/></div></div><ol start="5"><li>回到最初的登录界面<a href="https://register.us.kg/auth/login?next=/">登录</a>，输入邮箱和上一步设置的密码，登录。</li></ol><h2 id="KYC验证"><a href="#KYC验证" class="headerlink" title="KYC验证"></a>KYC验证</h2><ol><li>登录成功后，选择 <code>GITHUB KYC</code> 验证，这种验证方法不用捐款，只用在github上收藏项目且提交 <code>ISSUE申请</code> ，通过后即可使用。</li></ol><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/z7Tm5Bo2iZE1kFn.jpg" data-fancybox="true"/></div></div><ol start="2"><li>点击 <code>proceed to github</code> →填写用户名和申请原因→提交issue.</li></ol><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/E4uLm8UnGw5hyQP.jpg" data-fancybox="true"/></div></div><ol start="3"><li>进入仓库主页，点亮小星星star，静静等待通过。（1分钟）</li></ol><div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/B2QKUP5dFgRpvJk.jpg" data-fancybox="true"/></div></div><p>恭喜现在你可以去us.kg的主页登录注册域名啦，每个账号可以免费注册3个域名，有效期一年，可以在有效期前半年进行免费续期。</p><h2 id="域名托管"><a href="#域名托管" class="headerlink" title="域名托管"></a>域名托管</h2><p>去Cloudfare添加新增加的域名-复制生成DNS-粘贴到us.kg的NameServer处。<div class="tag-plugin image"><div class="image-bg"><img src="https://s2.loli.net/2024/12/05/BCJ7rpfIim9tckS.jpg" data-fancybox="true"/></div></div></p>]]></content>
     
@@ -30,7 +30,9 @@
     
     
     
-    <category term="技术分享" scheme="https://5mg.fun/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    <category term="技术乱炖" scheme="https://5mg.fun/categories/%E6%8A%80%E6%9C%AF%E4%B9%B1%E7%82%96/"/>
+    
+    <category term="技术分享" scheme="https://5mg.fun/categories/%E6%8A%80%E6%9C%AF%E4%B9%B1%E7%82%96/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
     <category term="免费域名" scheme="https://5mg.fun/tags/%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/"/>
