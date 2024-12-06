@@ -30,8 +30,8 @@
 <meta property="og:description" content="引入hexo-douban插件，实现在个人博客展示豆瓣电影评论、书评、音乐评论等。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Sumorio/BlogPic/douban-id.png">
-<meta property="article:published_time" content="2024-12-03T10:36:23.552Z">
-<meta property="article:modified_time" content="2024-12-03T10:36:23.552Z">
+<meta property="article:published_time" content="2024-12-06T03:14:30.159Z">
+<meta property="article:modified_time" content="2024-12-06T03:14:30.159Z">
 <meta property="article:author" content="苏末了">
 <meta property="article:tag" content="苏末了">
 <meta property="article:tag" content="薩魔5mg">
@@ -121,7 +121,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/Hexo/1.Hexo%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2.html">博客搭建</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2024-12-03T10:36:23.552Z">2024-12-03</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2024-12-06T03:14:30.159Z">2024-12-06</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -139,7 +139,8 @@
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/Sumorio/BlogPic/douban-id.png" data-fancybox="true"/></div></div>
 
 <h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>在<code>Git Bash</code>客户端中运行命令：</p>
-<p><code>npm install hexo-douban --save</code></p>
+<div class="tag-plugin copy"><span>$</span><input class="copy-area" id="copy_11" value="npm install hexo-douban --save"><button class="copy-btn" onclick="util.copy(&quot;copy_11&quot;,&quot;复制成功&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>将下面的配置写入站点的配置文件 <code>_config.yml</code> . (不是主题的配置文件).</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs _config.yml">douban:<br>  id: 改成你的ID  #这个需要修改为你个人的id<br>  dynamic: false<br>  item_per_page: 30<br>  meta_max_line: 5<br>  customize_layout: page<br>  builtin: true   #如果想生成豆瓣页面，这个需要设置为true<br>  movie:<br>    title: &#x27;豆瓣观影&#x27;<br>    quote: &#x27;电影是第一个让人类知道自己是谁的艺术。&#x27;<br>    path: /movie/index.html #生成的网页路径，定义成你自己的路径<br>  book:<br>    title: &#x27;豆瓣阅读&#x27;<br>    quote: &#x27;读书忌死读，死读钻牛角。&#x27;<br>    path: /book/index.html #生成的网页路径，定义成你自己的路径<br>  timeout: 10000<br></code></pre></td></tr></table></figure>
 
@@ -149,7 +150,8 @@
 <p> 注释：选择自己需要的参数即可<br>  -b, –books   Generate douban books only 书<br>  -g, –games   Generate douban games only 游戏<br>  -m, –movies  Generate douban movies only 电影<br>  -s, –songs   Generate douban songs only 音乐</p>
 </blockquote>
 <h3 id="启动生成"><a href="#启动生成" class="headerlink" title="启动生成"></a>启动生成</h3><p>在<code>Git Bash</code>客户端中运行命令：</p>
-<p><code>hexo clean &amp;&amp; hexo douban -bm &amp;&amp; hexo g &amp;&amp; hexo s</code></p>
+<div class="tag-plugin copy"><span>$</span><input class="copy-area" id="copy_12" value="hexo clean && hexo douban -bm && hexo g && hexo s"><button class="copy-btn" onclick="util.copy(&quot;copy_12&quot;,&quot;复制成功&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+
 <p>为了展示这里用<code>-bm</code>，仅生成书和影的页面。如果不加参数，那么默认参数为<code>-bgms</code>，生成四个页面。</p>
 <h3 id="测试访问"><a href="#测试访问" class="headerlink" title="测试访问"></a>测试访问</h3><p>如果上面的配置都没有问题，就可以使用<code>localhost:4000</code>+<code>你设置的网页地址</code>，浏览器访问网址，可以访问代表设置成功。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ip">http://localhost:4000/book/<br>http://localhost:4000/movie/<br></code></pre></td></tr></table></figure>
@@ -748,4 +750,4 @@
     mediumZoom(".l_body .content p img", { background: "var(--site-bg)" })
   </script>
   <!-- hexo injector body_end end --></body></html>
-<script>var posts=["posts/5e927dfc.html","posts/d4aaf8b4.html","posts/4812c2a7.html","posts/e48f9054.html","posts/e6c9a182.html","posts/7375d15a.html","posts/d127d11.html","posts/2e016ed9.html","posts/edeb1358.html","posts/39ab41cf.html","posts/ed4d040e.html","posts/25037f5b.html","posts/404029d6.html","posts/58b305af.html","posts/e995d344.html","posts/e39f3cee.html","posts/1094ebf6.html","posts/bfc388e3.html","posts/2e070ebb.html","posts/fd968aff.html"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
+<script>var posts=["posts/5e927dfc.html","posts/4812c2a7.html","posts/d4aaf8b4.html","posts/e48f9054.html","posts/e6c9a182.html","posts/7375d15a.html","posts/d127d11.html","posts/edeb1358.html","posts/39ab41cf.html","posts/ed4d040e.html","posts/2e016ed9.html","posts/404029d6.html","posts/58b305af.html","posts/25037f5b.html","posts/e995d344.html","posts/bfc388e3.html","posts/1094ebf6.html","posts/e39f3cee.html","posts/2e070ebb.html","posts/fd968aff.html"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
