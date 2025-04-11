@@ -1,0 +1,33 @@
+name: 博客搭建
+title: 个人博客搭建
+subtitle: "每个人的独立博客 |  🛸 Designed by Sumor ."
+tags: [博客搭建]
+icon: /assets/images/wiki-a-3.png
+cover: /assets/images/wiki-1.png
+coverpage: true # 默认是 true,全屏
+license: true
+share: true
+description: 使用Hexo+Stellar+Github实现 "从零搭建个人网站" 。
+repo: Sumorio/sumorio.github.io
+leftbar:
+  - tree
+  - release_update
+rightbar:
+  - toc
+
+base_dir: /wiki/Hexo/
+tree:
+  "环境部署": 
+    - 1.Hexo之环境部署
+  "项目上线":
+    - 101Github-hosting-webpage
+    - 102Domain-Name
+    - 103GPAction
+  "主题美化":
+    - 201Webpage-beautification
+    - 202Theme-black-white-switch
+  "其他配置":
+    - 301Twikoo-deployment
+    - 302Dynamic-friend-chain
+    - 303filesystem-sidebar
+    - 304stellar+douban

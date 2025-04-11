@@ -1,0 +1,222 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 薩魔5mg
+subtitle: 穿戴整齐面对疯狂的世界。 | 🧡 Love and Peace.
+avatar: /assets/images/avatar.png
+favicon: https://s2.loli.net/2023/10/20/rfLIRXdAplxjGyU.png
+description: "个人技术博客，个人生活记录，个人所见，所感，所言，所想。"
+keywords:
+  - 苏末了
+  - 薩魔5mg
+  - 个人博客
+  - 技术博客
+  - sumor
+  - sumorio
+  - Hexo
+  - stellar
+author: 苏末了
+language:
+  - zh-CN
+  - en
+  - zh-TW
+timezone: ""
+
+logo:
+  subtitle: "副标题 | 隐藏副标题" # 副标题
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://5mg.fun
+permalink: posts/:abbrlink.html #:year/:month/:day/:title/ posts/:title.html
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :year/:month/:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ""
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  enable: true
+  auto_detect: true
+  line_number: true
+  tab_replace: "  "
+  wrap: true
+  hljs: true
+prismjs:
+  preprocess: true
+  line_number: true
+  line_threshold: 0
+  tab_replace: ""
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: "mtime"
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: stellar
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo:
+    github: git@github_sm:SM5mg/SM5mg.github.io.git #修改成小号github_sm
+    # gitee: git@gitee.com:somor/sumor.git # 已经下线
+  branch: master
+  message: update blog
+
+wiki_dir: wiki
+author_dir: author
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+  path:
+    - sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+
+# baidusitemap:
+#   path:
+#     - baidusitemap.xml
+
+# ---新增
+inject:
+  head:
+    - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    - <link href="https://fonts.loli.net/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    - <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+    - <script> window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); }; </script> #vercel analytics
+    -  <script defer src="/_vercel/insights/script.js"></script>
+    - <link href="https://fonts.loli.net/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+  script:
+    - <script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script>
+    - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+    - <script src="/static/js/snow.js"></script>
+    - <script src="/js/random.js"></script> # 随机文章
+
+#豆瓣配置
+douban:
+  id: 141865177 #这个需要修改为你个人的id
+  dynamic: false
+  item_per_page: 30
+  meta_max_line: 5
+  customize_layout:
+  builtin: ture #如果想生成豆瓣页面，这个需要设置为true
+  movie:
+    title: "豆瓣观影"
+    quote: '" 恐惧囚禁人的灵魂，希望可以让你自由。"——肖申克的救赎'
+    more: more
+    path: /douban/movie/index.html #生成的网页路径
+  book:
+    title: "豆瓣阅读"
+    quote: '" 读一本好书，就是和许多高尚的人谈话。"——歌德'
+    more: book
+    path: /douban/book/index.html #生成的网页路径
+  option:
+    menu_id: more
+  timeout: 10000
+
+# abbrlink 配置
+abbrlink:
+  alg: crc32 #算法，支持 crc16(default)和 crc32
+  rep: hex #进制，支持 dec(default)和 hex
+  drafts: false #true：对草稿也进行处理，false：不处理草稿。默认为 false
+  # 从目录树生成类别
+  # depth: 您想生成的目录树的最大深度, 需要大于 0
+  auto_category:
+    enable: true #默认为 true
+    depth: #默认为 3
+    over_write: false
+  auto_title: false #启用自动标题，它可以按路径自动填充标题
+  auto_date: false #启用自动日期，可以按今天的时间自动填写日期
+  force: false #启用 Force 模式，在这种模式下插件将忽略缓存，并为每一篇文章计算生成永久链接，即使它已经有了永久链接。这个设置只会更新永久链接，而不是更新其他前置变量。
+
+# hexo-neat
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css
+neat_css:
+  enable: true
+  exclude:
+    - "**/*.min.css"
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - "**/*.min.js"
+    - "**/jquery.fancybox.pack.js"
+    - "**/index.js"

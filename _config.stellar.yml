@@ -1,0 +1,333 @@
+# 侧边栏配置
+menubar:
+  columns: 4 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+    - id: post # 页面中高亮的 menu_id
+      theme: "#2a8870" # 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+      icon: #solar:documents-bold-duotone # 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+      title: Blog # 标题
+      url: / # 跳转链接，支持相对路径和绝对路径
+    - id: wiki
+      theme: "#2a8870"
+      icon: #solar:notebook-bookmark-bold-duotone
+      title: WiKi
+      url: /wiki/
+    - id: topic
+      theme: "#2a8870"
+      icon: #solar:planet-bold-duotone
+      title: Topic
+      url: /topic/
+    - id: more
+      theme: "#2a8870"
+      icon: #solar:chat-square-like-bold-duotone
+      title: More
+      url: /about/
+
+# 站点主结构树
+site_tree:
+  # -- 列表类页面 -- #
+  # 首页
+  home:
+    leftbar: welcome-poet,recent
+    rightbar: welcome-all,categories,tagcloud
+
+  # item列表页配置
+  # post_blog文章列表页配置
+  index_blog:
+    base_dir: blog # 只影响自动生成的页面路径
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
+    leftbar: related,linklist-item,recent # for categories/tags/archives
+    rightbar: #ghuser,welcome-home,tagcloud
+    # sidebar: search,welcome-homie,toc,tagcloud # for categories/tags/archives
+    nav_tabs: # 近期发布 分类 标签 专栏 归档 and ...
+      "留言": /about/#comments #点击到网页复制路径
+  # topic列表页配置
+  index_topic:
+    base_dir: topic # 只影响自动生成的页面路径
+    menu_id: topic # 未在 front-matter 中指定 menu_id 时，layout 为 topic 的页面默认使用这里配置的 menu_id
+    # menu_id: post  #作者备注
+    leftbar: tree, related,recent # for wiki
+    rightbar: welcome-homie
+    nav_tabs:
+  # wiki列表页配置
+  index_wiki:
+    base_dir: wiki # 只影响自动生成的页面路径
+    menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
+    # sidebar: welcome-homie,toc,tagcloud  # for wiki
+    leftbar: recent # for wiki
+    rightbar: #ghuser,welcome-homie,tagcloud
+    nav_tabs:
+      "留言": /about/#comments #点击到网页复制路径
+
+  # -- 内容类页面 -- #
+  # post_blog文章内页配置
+  post:
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
+    leftbar: welcome-homie # for pages using 'layout:post'
+    rightbar: toc
+  # topic专栏文章内页配置
+  topic:
+    menu_id: topic
+    leftbar: tree, related,welcome-homie # for pages using 'layout:post'
+    rightbar: toc
+  # wiki项目文章内页配置
+  wiki:
+    menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
+    # sidebar: resent,search,welcome-homie,toc,tagcloud  # for wiki
+    leftbar: tree, related, recent # for wiki
+    rightbar: toc
+  # -- 其他类页面 -- #
+  # 作者页-内页配置
+  author:
+    base_dir: author # 只影响自动生成的页面路径
+    menu_id: post
+    leftbar: welcome-homie,recent
+    rightbar: welcome-home,tagcloud,memos-du
+  # 错误页-内页配置
+  error_page:
+    menu_id: post
+    "404": "/404.html"
+    # sidebar: resent,search,welcome-homie,toc,tagcloud
+    leftbar: welcome-homie,recent
+    rightbar: welcome-home,tagcloud,memos-du
+  # 其它自定义页面配置 layout: page
+  page:
+    leftbar: linklist,recent # for wiki
+    rightbar: toc
+
+open_graph:
+  enable: true
+  twitter_id: # for open_graph meta
+
+article:
+  type: tech # tech/story: story类文字和段落间增距大。
+  auto_cover: false # 根据tags在线搜索封面
+  auto_excerpt: 100 # 生成摘要的字
+  related_posts:
+    enable: true
+    title: 相关推荐
+  license: "本文遵循[非商业性使用-国际署名](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请说明。" # 许可协议
+  share: [weibo, link, wechat] #wechat email,
+  donate:
+    wechat: "/assets/images/we-do.png"
+  category_color:
+    "博客搭建": "#4CB9E7"
+    "Github": "#4CB9E7"
+    "Hexo": "#FF004D"
+    "NameSilo": "#43766C"
+    "PicGo": "#11009E"
+    "IOS": "#F08A5D"
+    "技术乱炖": "#629584"
+    "写作阅读": "#f45d48"
+    "闲言扯语": "#3282B8"
+    "诗歌向": "#533663"
+    "梦": "#4CB9E7"
+    "哲学": "#4CB9E7"
+    "女性主义": "#FF004D"
+    "物质与意识": "#4CB9E7"
+    "Google": "#43766C"
+
+# 全局样式
+style:
+  prefers_theme: auto
+  leftbar:
+    background-image: "url(https://s2.loli.net/2024/11/18/QudnT3B1XoxgscI.jpg)"
+    blur-px: 80px # 模糊半径
+    blur-bg: var(--alpha75) # 模糊颜色
+  text-align: left # justify/left/center/right
+  darkmode: false # auto true false
+  font-size:
+    root: 17.5px
+    body: 1rem
+    code: 80%
+    codeblock: 0.8rem
+  font-family:
+    logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
+  color:
+    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
+    background: "hsl(240 35% 97%)" # 浅色背景颜色-夜间背景色
+    block: "hsl(250 30% 94%)" # 大块背景颜色-文档头，留言框，右边栏，文件夹
+    code: "hsl(280, 29%, 50%)" # 行内代码字体
+    text: "hsl(0 0% 20%)" # 文本颜色
+    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
+    theme: "hsl(86, 61%, 70%)" # 绿色主题色-浅绿色
+    accent: "hsl(14 100% 57%)" # 橘色强调色
+    link: "hsl(280, 29%, 45%)" # 超链接颜色-紫色
+    button: "hsl(164, 53%, 50%)" #"hsl(164, 53%, 30%)"深绿色、浅绿色 # 按钮绿色
+    hover: "hsl(45, 100%, 70%)" #"hsl(14 100% 57%)" # 按钮高亮橘色
+  codeblock:
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css
+  border-radius:
+    card: 9px # 卡片圆角
+    block: 6px # 块圆角
+    bar: 7px # 导航栏圆角
+    image: 6px # 图片圆角
+
+# 页脚
+footer:
+  social:
+    github:
+      title: Github
+      icon: '<i class="fa fa-github fa-brands fa-bounce"></i>'
+      url: https://github.com/Sumorio
+    music:
+      title: 网易云
+      icon: '<i class="fa-solid fa-music fa-flip"></i>'
+      url: https://music.163.com/#/user/home?id=74806809
+    bili:
+      title: B站
+      icon: '<i class="fas fa-play  fa-brands fa-bounce"></i>'
+      url: https://space.bilibili.com/72972753/
+    # social:
+    #   title: 回顶部
+    #   icon: '<img src="https://cdn.jsdelivr.net/gh/gaoyanliang/cdn@main/blog/img/social/top.svg"/>'
+    #   url: '#start'
+    aboutMe:
+      title: 留言板
+      icon: '<i class="fa-solid fa-commenting fa-shake"></i>'
+      url: /about/#comments
+    Snow:
+      title: 下雪/晴天
+      icon: '<i class="fa-solid fa-snowflake fa-spin" style="--fa-animation-duration: 8s;"></i>'
+      url: javaScript:toggleSnow();
+    Moon:
+      title: 日/夜
+      icon: '<i class="fa-solid fa-moon fa-flip"></i>' #'<i class="fa-solid fa-circle-half-stroke fa-flip"></i>'
+      onclick: "switchTheme()"
+  # 页面底部的站点导航
+  sitemap:
+    "<strong>Blog</strong>":
+      - "[文章](/)"
+      - "[项目](/wiki/)"
+      - "[专栏](/topic/)"
+    "<strong>WiKi</strong>":
+      - "[建站](/wiki/Hexo/1.Hexo之环境部署.html)"
+      - "[逻辑学](/wiki/LogC/第一章.html)"
+    "<strong>Tool</strong>":
+      - "[电影](/douban/movie/index.html)"
+      - "[书籍](/douban/book/index.html)"
+      - "[工具](https://tool.5mg.fun/)"
+    "<strong>More</strong>":
+      - "[关于我](/about)"
+      - "[伙伴们](/about/#伙伴集结)"
+      - "[留言区](/about/#comments)"
+  content: | # 支持 Markdown 格式
+    <img src="/assets/images/sheep-muyu.gif" alt="sheep" style="float: right; width: 80px; margin-left: 20px;">
+    <center>
+      <div>
+        <div>
+          © 2024
+          <a style="font-weight: bold;  auto;" target="_blank" rel="noopener" href="https://github.com/Sumorio"">薩魔5mg</a>
+          使用 <a style="font-weight: bold;  auto;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar </a>创建
+          </br><span id="runtime_span"></span>
+        </div>
+        <script type="text/javascript">
+          function show_runtime() {
+              window.setTimeout("show_runtime()", 1000);
+              X = new Date("08/18/2024 00:00:00");
+              Y = new Date();
+              T = (Y.getTime() - X.getTime());
+              M = 24 * 60 * 60 * 1000;
+              a = T / M;
+              A = Math.floor(a);
+              b = (a - A) * 24;
+              B = Math.floor(b);
+              c = (b - B) * 60;
+              C = Math.floor((b - B) * 60);
+              D = Math.floor((c - C) * 60);
+              runtime_span.innerHTML = "✨ 营业：" + A + "天-" + B + "小时-" + C + "分-" + D + "秒 ✨"
+          }
+          show_runtime();
+        </script>
+      </div>
+    </center>
+
+copycode:
+  enable: false
+
+# 文章搜索
+search:
+  service: local_search # local_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+    codeblock: true # 是否搜索代码块（需要content: true)
+
+# 开启图片点击放大功能 {% image %}
+tag_plugins:
+  image:
+    fancybox: true
+  icon:
+    # 留空时，图标和文字颜色相同
+    default_color: accent # theme, accent, red, orange, yellow, green, cyan, blue, purple
+
+# 默认打开
+lazyload:
+  enable: true # [hexo clean && hexo s] is required after changing this value.
+  js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+  transition: blur # blur, fade
+
+# 默认打开
+loading:
+  loading: 正在加载
+  error: 加载失败，请稍后重试。
+
+######## Comments ########
+comments:
+  service: twikoo
+  twikoo:
+    js: https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js # 建议锁定版本
+    envId: https://twikoo.5mg.fun # twikoo云函数,
+  emoji:
+    - https://unpkg.com/@waline/emojis@1.1.0/weibo
+    - https://unpkg.com/@waline/emojis@1.1.0/alus
+    - https://unpkg.com/@waline/emojis@1.1.0/bilibili
+    - https://unpkg.com/@waline/emojis@1.1.0/qq
+    - https://unpkg.com/@waline/emojis@1.1.0/tieba
+    - https://unpkg.com/@waline/emojis@1.1.0/tw-emoji
+    - https://unpkg.com/@waline/emojis@1.1.0/bmoji
+  #反应表情组
+  reaction:
+    - https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_heart_eyes.png
+    - https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_joy.png
+    - https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png
+    - https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png
+  artalk:
+    css: https://unpkg.com/artalk@2.7/dist/Artalk.css
+    js: https://unpkg.com/artalk@2.7/dist/Artalk.js
+    server: # 后端服务地址
+    placeholder: ""
+    darkMode: auto
+
+data_services:
+  # 外部 md 渲染
+  # mdrender:
+  #   js: /js/services/mdrender.js
+  # # 数据填充类
+  # siteinfo:
+  #   js: /js/services/siteinfo.js
+  #   # 设置 api 可以自动提取网页标题、图标，服务部署方法：https://github.com/xaoxuu/site-info-api/
+  #   # 接口测试通过后，把按钮的 href 部分替换成 {href} 之后填写到下方，例如：https://api.vlts.cc/site_info/v1?url={href}
+  #   api:
+  # ghinfo:
+  #   js: /js/services/ghinfo.js
+  # # 网格布局类
+  # sites:
+  #   js: /js/services/sites.js
+  # friends:
+  #   js: /js/services/friends.js
+  # # 列表布局类
+  # timeline:
+  #   js: /js/services/timeline.js
+  # fcircle:
+  #   js: /js/services/fcircle.js
+  # weibo:
+  #   js: /js/services/weibo.js
+  memos:
+    js: /js/services/memos.js
+  twikoo:
+    js: /js/services/twikoo_new.js #评论侧栏设置，对应的文件theme/source/js/services/twikoo_new.js

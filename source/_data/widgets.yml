@@ -1,0 +1,193 @@
+welcome:
+  layout: markdown
+  title: 欢迎欢迎
+  content: |
+    本站是 苏末了 的知识库和项目集合站，希望您在这里玩的开心。
+
+
+categories:
+	layout: categories
+	title: 分类索引
+
+support:
+  layout: markdown
+  title: 赏个鸡腿
+  content: |
+    ![微信](/assets/images/we-do.png)
+# 文章目录树
+
+toc:
+  layout: toc
+  list_number: false # 是否显示序号
+  min_depth: 2 # 建议不要低于 2 即从 H2 标签开始解析（H1标签用于文章大标题）
+  max_depth: 6 # 6 代表最多解析到 H6 标签
+  fallback: recent # Use a backup widget when toc does not exist.
+  collapse: true # true / false / auto (始终折叠/不折叠/自动折叠)
+
+# rss插件，最近更新的文章
+recent:
+  layout: recent
+  rss: /atom.xml # npm i hexo-generator-feed
+  limit: 10 # Count of posts
+
+# 显示具有相同 tags 的其它项目列表
+related:
+  layout: related
+
+# 标签索引组件
+tagcloud:
+  layout: tagcloud
+  title: 标签索引
+  # 标签索引配置
+  min_font: 12
+  max_font: 24
+  amount: 100
+  orderby: name
+  order: 1 # 1, sac 升序；-1, desc 降序
+  color: false # 使用颜色
+  start_color: # 开始的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  end_color: # 结束的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  show_count: false # 显示每个标签的文章总数
+
+# github用户卡片
+ghuser:
+  layout: ghuser
+  username: Sumorio # your github login username
+  avatar: true # show avatar or not
+  menu: true # show menu or not
+
+ghrepo:
+  layout: ghrepo
+
+# add
+welcome-all:
+  layout: markdown
+  title: '<i class="fa fa-heart fa-flip" style="color: #5c85d6;"></i> Halo Homie!'
+  linklist:
+    columns: 1
+    items:
+      - icon: icon:read
+        title: 随机阅读
+        url: 'javascript:toRandomPost()'
+  content: |
+    <h4 style="text-align: center">公告</h4>
+    <p>本站资源依赖<strong>Github+CF</strong>，如果无法访问或图片加载慢，请尝试代理。欢迎电邮！<a style="font-weight: bold;" target="_blank" rel="noopener" href="mailto:sumorio@yeah.net"><i class="fa-solid fa-at"></i> 发邮件 </a></p>
+    <br>
+
+    <h5 style="font-family: 'Gloria Hallelujah';text-align: center;display: block;color: #7979ec; ">Have Fun :) ~ </h5>
+    <span id="welcome-all" style="font-family: LXGW WenKai Screen;"></span>
+    <span id="welcome-all" style="font-family: 'Gloria Hallelujah';"></span>
+
+
+
+linklist-item:
+  title: '专栏列表'
+  layout: linklist
+  columns: 1 
+  items:
+    - icon: linklist:pen  # 或者 icons.yml 中设置的 icon 名称
+      title: ' 杂言社: 聆听'
+      url: /posts/fd968aff.html
+    - icon: linklist:pen # 或者 icons.yml 中设置的 icon 名称
+      title: ' 哲思角: 感悟'
+      url: /posts/e39f3cee.html
+    - icon: linklist:pen # 或者 icons.yml 中设置的 icon 名称
+      title: ' 漫谈技: 记录'
+      url: /posts/bfc388e3.html
+
+welcome-poet:
+  layout: markdown
+  title: ' Today is a Nice Day !'
+  content: |
+    <span id="jinrishici-sentence"></span>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+#主题更新
+release_update:
+  layout: timeline
+  title: '<i class="fa-solid fa-snowflake fa-spin" style="color: #08D9D6;"></i> 主题更新'
+  api: https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/releases?per_page=1
+  user: xaoxuu
+
+memos-du:
+  layout: timeline
+  title:  个人说说
+  api: https://s.dusays.com/api/v1/memo?creatorId=87
+  type: memos
+  hide: user,footer
+  limit: 10
+# https://s.dusays.com/api/v1/memo/all?limit=1
+
+new_comment:
+  layout: timeline
+  title: '<i class="fa-solid fa-snowflake fa-spin" style="color: #5c85d6;"></i> 最新评论'
+  api: https://twikoo.5mg.fun  # 此处为 Twikoo 函数，末尾不要加 /
+  type: twikoo
+  limit: 16 # 限制获取数量，默认为 10
+  hide: reply # 是否隐藏回复，不填默认不隐藏
+
+# 愣着干啥，新建啊
+recent_topic_philosophy:
+  layout: related
+  api: /topic/philosophy.yml
+  # 你的朋友圈数据文件地址
+  type: topic
+  limit: 5 # 可通过这个限制最大数量
+
+# 愣着干啥，新建啊
+recent_topic_tech:
+  layout: related
+  api: /topic/tech.yml
+  # 你的朋友圈数据文件地址
+  type: topic
+  limit: 5 # 可通过这个限制最大数量
+
+
+
+welcome-homie:
+  layout: markdown
+  title: Welcome Homie! #'<i class="fa fa-heart fa-flip" style="color: #5c85d6;"></i> Welcome Homie!'
+  linklist:
+    layout: linklists
+    columns: 1 
+    items:
+      - icon: icon:read
+        title: 随机阅读
+        url: 'javascript:toRandomPost()'
+    # items:
+    #   - icon: linklist:comments # 或者 icons.yml 中设置的 icon 名称
+    #     title: 留言
+    #     url: /about/#comments
+  content: | 
+    风后面是风,天上面是天,
+    道路前面还是道路。
+    每一个相遇,
+    都是命中注定的离别之后的重逢。
+
+
+# 愣着干啥，新建啊
+recent_topic_other:
+  layout: related
+  api: /topic/other.yml
+  # 你的朋友圈数据文件地址
+  type: topic
+  limit: 6 # 可通过这个限制最大数量
+
+linklist:
+  title: 社交导航
+  layout: linklist
+  columns: 1 
+  items:
+    - icon: linklist:friends1 # 或者 icons.yml 中设置的 icon 名称
+      title: Tool
+      url: https://tool.5mg.fun/
+    - icon: linklist:book # 或者 icons.yml 中设置的 icon 名称
+      title: Book
+      url: /douban/book/
+    - icon: linklist:movie # 或者 icons.yml 中设置的 icon 名称
+      title: Movie
+      url: /douban/movie/
+    - icon: linklist:comments # 或者 icons.yml 中设置的 icon 名称
+      title: Comments
+      url: /about/#comments
+

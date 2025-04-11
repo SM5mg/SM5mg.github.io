@@ -1,0 +1,25 @@
+name: 前端
+title: 前端学习笔记
+subtitle: "大话前端 | 🚀 Designed by Sumor ."
+tags: [前端]
+icon: /assets/images/wiki-a-1.png
+cover: /assets/images/wiki-3.png
+coverpage: true # 默认是 true,全屏
+license: true
+share: true
+description: 前端知识,HTML+CSS+JavaScript等。
+repo: Sumorio/sumorio.github.io
+leftbar:
+  - tree
+  - related
+base_dir: /wiki/FrontEnd/
+tree:
+  "HTML":
+    - HTML0
+    - HTML4
+    - HTML5
+  "CSS":
+    - CSS2
+    - CSS3
+  "JavaScript实践":
+    - JavaScript

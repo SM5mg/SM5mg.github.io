@@ -1,0 +1,19 @@
+name: 逻辑学
+title: 初探逻辑学
+subtitle: " 极简逻辑学 | 🚀 Designed by Sumor ."
+tags: [逻辑学]
+icon: /assets/images/wiki-a-4.png
+cover: /assets/images/wiki-4.png
+coverpage: true # 默认是 true,全屏
+license: true
+share: true
+description: 不正经的逻辑学习记录。
+repo: Sumorio/sumorio.github.io
+leftbar:
+  - tree
+  - related
+base_dir: /wiki/LogC/
+tree:
+  "逻辑导论":
+    - 第一章
+    - 第二章
